@@ -24,7 +24,7 @@ module.exports = function(grunt) {
   grunt.config('symlink', {
     modules: {
       src: '<%= config.srcPaths.drupal %>/modules',
-      dest: '<%= config.buildPaths.html %>/sites/all/modules/custom'
+      dest: '<%= config.buildPaths.html %>/modules/custom'
     },
     profiles: {
       expand: true,
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
     },
     themes: {
       src: '<%= config.srcPaths.drupal %>/themes',
-      dest: '<%= config.buildPaths.html %>/sites/all/themes/custom'
+      dest: '<%= config.buildPaths.html %>/themes/custom'
     }
   });
 };
